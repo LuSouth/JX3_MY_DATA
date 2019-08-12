@@ -1,7 +1,8 @@
 # 更新日志
 
-* 2019-08-07 基于默认数据，添加一个秀坊部分隐藏buff，测试部分功能
+* 2019-08-13 去掉了一些烦人的提示
 * 2019-08-10 合并原南宫伯、七月十五、小小书生、青妆人插件，附加个人习惯
+* 2019-08-07 基于默认数据，添加一个秀坊部分隐藏buff，测试部分功能
 
 # 茗伊插件自定义团队监控数据
 
@@ -46,7 +47,7 @@
 > 如果你是普通用户，只需要找数据作者索要短链接地址即可使用，如果你是数据作者，欢迎继续往下阅读各项参数的内容。
 
  * {USERNAME} 为数据作者仓库账号英文名称
- * {PROVIDER} 为数据仓库所在站点，可选值有 [`github`](https://github.com/tinymins/JX3_MY_DATA)、 [`aliyun`](https://code.aliyun.com/tinymins/JX3_MY_DATA)、 [`gitee`](https://gitee.com/tinymins/JX3_MY_DATA)，默认值为 `github`，各位数据作者可根据自身喜好选择站点。
+ * {PROVIDER} 为数据仓库所在站点，可选值有 [`github`](https://github.com/LuSouth/JX3_MY_DATA)、 [`aliyun`](https://code.aliyun.com/LuSouth/JX3_MY_DATA)、 [`gitee`](https://gitee.com/LuSouth/JX3_MY_DATA)，默认值为 `github`，各位数据作者可根据自身喜好选择站点。
  * {PROJECT} 为数据仓库项目名称，默认值为 `JX3_MY_DATA`，用于作者有多个数据项目或自定义项目名称时使用。
  * {BRANCH} 为数据仓库分支名称，默认值为 `master`，用于作者数据项目有多个开发进度（如测试服数据）时使用。
  * {PATH} 为数据仓库描述文件地址，默认值为 `MY_TeamMon/{游戏语言}/meta.json`，该字段一般不需做特殊修改。
@@ -54,31 +55,31 @@
 > 示例
 
 ```
-tinymins
-tinymins?master
-tinymins/JX3_MY_DATA
-tinymins/JX3_MY_DATA?master
-tinymins@github
-tinymins@github?master
-tinymins@github:/MY_TeamMon/zhcn/meta.json
-tinymins@github/JX3_MY_DATA
-tinymins@github/JX3_MY_DATA:/MY_TeamMon/zhcn/meta.json
-tinymins@github/JX3_MY_DATA?master:/MY_TeamMon/zhcn/meta.json
+LuSouth
+LuSouth?master
+LuSouth/JX3_MY_DATA
+LuSouth/JX3_MY_DATA?master
+LuSouth@github
+LuSouth@github?master
+LuSouth@github:/MY_TeamMon/zhcn/meta.json
+LuSouth@github/JX3_MY_DATA
+LuSouth@github/JX3_MY_DATA:/MY_TeamMon/zhcn/meta.json
+LuSouth@github/JX3_MY_DATA?master:/MY_TeamMon/zhcn/meta.json
 ```
 
 在剑网3简体客户端中，输入上述示例短链接，均等价于直接输入如下描述文件地址
 
 ```
-https://raw.githubusercontent.com/tinymins/JX3_MY_DATA/master/MY_TeamMon/zhcn/meta.json
+https://raw.githubusercontent.com/LuSouth/JX3_MY_DATA/master/MY_TeamMon/zhcn/meta.json
 ```
 
 ## 自制云数据
 
 > 开始之前，先根据个人喜好选择一个站点作为数据仓库：
 
- * [`github`](https://github.com/tinymins/JX3_MY_DATA) 默认站点，限制较少，但在国内连接速度不稳，无中文界面。
- * [`aliyun`](https://code.aliyun.com/tinymins/JX3_MY_DATA) 阿里云仓库，国内速度较快，访问仓库要求用户登录，中文界面。
- * [`gitee`](https://gitee.com/tinymins/JX3_MY_DATA) 码云仓库，国内速度较快，访问仓库不要求登录访问，界面有少许广告。
+ * [`github`](https://github.com/LuSouth/JX3_MY_DATA) 默认站点，限制较少，但在国内连接速度不稳，无中文界面。
+ * [`aliyun`](https://code.aliyun.com/LuSouth/JX3_MY_DATA) 阿里云仓库，国内速度较快，访问仓库要求用户登录，中文界面。
+ * [`gitee`](https://gitee.com/LuSouth/JX3_MY_DATA) 码云仓库，国内速度较快，访问仓库不要求登录访问，界面有少许广告。
 
 > 开始创建自己的仓库，这里假设你已制作完成一份数据并从游戏中导出完成。
 
@@ -91,7 +92,7 @@ https://raw.githubusercontent.com/tinymins/JX3_MY_DATA/master/MY_TeamMon/zhcn/me
 7. 将你的数据文件重命名为 `data.jx3dat` 并拖拽到上传框完成上传，输入提交日志并提交改动。
 8. 重复第3步，回到对应语言文件夹，点击 `meta.json` 进入描述文件，并点击 `Edit`（阿里云显示为 `编辑`） 按钮开始编辑，修改数据名称、作者、版本号等信息后，点击 `Commit`（阿里云显示为 `提交修改`） 按钮保存改动。
 
-至此，你已完成创建并更新了你的自制云数据，游戏中可添加描述地址，其格式为 `{你的用户名}@{你选择的仓库站点}`，如 ①`tinymins@github`、 ②`tinymins@aliyun`。（注：由于 `github` 是默认站点，所以实际上示例①输入 `tinymins` 即可）
+至此，你已完成创建并更新了你的自制云数据，游戏中可添加描述地址，其格式为 `{你的用户名}@{你选择的仓库站点}`，如 ①`LuSouth@github`、 ②`LuSouth@aliyun`。（注：由于 `github` 是默认站点，所以实际上示例①输入 `LuSouth` 即可）
 
 > 更新数据
 
