@@ -1,0 +1,32 @@
+return{
+	BUFF = {
+		[-1] = {
+			{
+				{
+					bBuffList = true,
+				},
+				nLevel = 1,
+				nScrutinyType = 1,
+				dwID = 12492,
+				nIcon = 3785,
+				szName = "½¥Òþ",
+				bCheckLevel = false,
+			},
+		}
+	},
+	DEBUFF = {
+		[-1] = {
+			{
+				{
+					bBuffList = true,
+				},
+				nLevel = 1,
+				nScrutinyType = 1,
+				dwID = 12492,
+				nIcon = 3785,
+				szName = "½¥Òþ",
+				bCheckLevel = false,
+			},
+		}
+	},
+}
