@@ -1,17 +1,86 @@
 return{
+    CASTING = {
+        [358] = {
+            {
+                nLevel = 2,
+                [8] = {
+                    bCenterAlarm = true,
+                },
+                dwID = 19841,
+            },
+            {
+                nLevel = 1,
+                [8] = {
+                    bCenterAlarm = true,
+                },
+                dwID = 19851,
+                szNote = "出水！",
+            },
+            {
+                nLevel = 2,
+                [8] = {
+                    bCenterAlarm = true,
+                },
+                dwID = 19850,
+                szNote = "入水！",
+            },
+            {
+                nLevel = 2,
+                [8] = {
+                    bCenterAlarm = true,
+                    bScreenHead = true,
+                },
+                dwID = 19845,
+                szNote = "打断！打断！",
+            }
+        },
+    },
 	BUFF = {
 		[-1] = {
 			{
 				{
 					bBuffList = true,
 				},
+				nIcon = 902,
+				nScrutinyType = 1,
+				dwID = 1047,
+				nLevel = 1,
+				szName = "加速",
+			},
+			{
+				{
+					bBuffList = true,
+				},
 				nLevel = 1,
 				nScrutinyType = 1,
-				dwID = 12492,
-				nIcon = 3785,
-				szName = "渐隐",
-				bCheckLevel = false,
+				dwID = 6277,
+				nIcon = 3836,
+				szName = "{$S6717}",
+				aCataclysmBuff = {},
 			},
+            {
+                {
+                    bBuffList = true,
+                },
+                nIcon = 7483,
+                nScrutinyType = 1,
+                dwID = 12578,
+                nLevel = 1,
+                szName = "驱夷",
+            },
+            {
+                tCountdown = {
+                    {
+                        nClass = 1,
+                        nFrame = 6,
+                        nIcon = 5425,
+                        nTime = "18,绿螭骢调息",
+                    },
+                },
+                nScrutinyType = 1,
+                dwID = 244,
+                nLevel = 1,
+            },
 		}
 	},
 	DEBUFF = {
@@ -29,4 +98,181 @@ return{
 			},
 		}
 	},
+    TALK = {
+        [16] = {
+			{
+                tCountdown = {
+                    {
+                        szName = "琵琶",
+                        nIcon = 340,
+                        nClass = 14,
+                        nTime = 5,
+                    },
+                },
+				szContent = "千呼万唤始出来，犹抱琵琶半遮面。",
+				szNote = "琵琶",
+			},
+			{
+                tCountdown = {
+                    {
+                        szName = "花鼓",
+                        nIcon = 340,
+                        nClass = 14,
+                        nTime = 5,
+                    },
+                },
+				szNote = "花鼓",
+				szContent = "春宵漫击催花鼓，凤阳歌者走四方。",
+			},
+			{
+                tCountdown = {
+                    {
+                        szName = "古琴",
+                        nIcon = 340,
+                        nClass = 14,
+                        nTime = 5,
+                    },
+                },
+				szContent = "丝桐合为琴，中有太古声。",
+				szNote = "古琴",
+			},
+			{
+                tCountdown = {
+                    {
+                        szName = "笛子",
+                        nIcon = 340,
+                        nClass = 14,
+                        nTime = 5,
+                    },
+                },
+				szContent = "谁家玉笛暗飞声，散入春风满洛城。",
+				szNote = "笛子",
+			},
+            {
+				tCountdown = {
+					{
+						szName = "月琴",
+						nIcon = 340,
+						nClass = 14,
+						nTime = 5,
+					},
+				},
+				szContent = "弦揉皓月夜深沉，斜抱月琴作凤吟。",
+			},
+		},
+        [334] = {
+			{
+				szContent = "战况紧急，恶人谷的兄弟速来我身边汇合，准备冲锋陷阵！",
+				szTarget = "莫雨",
+			},
+			{
+				szContent = "敌众势大，我等需当一鼓作气！",
+				szTarget = "莫雨",
+			},
+			{
+				szContent = "前线来报，经首道源晶矿收集进展停滞，谷主特派我前来助大家一臂之力！",
+				szTarget = "莫雨",
+			},
+			{
+				szContent = "矿车被毁，大家暂且撤退！",
+				szTarget = "恶人守卫",
+			},
+			{
+				tCountdown = {
+					{
+						szName = "浩气矿车",
+						nIcon = 340,
+						nClass = 14,
+						nTime = 300,
+					},
+				},
+				szTarget = "浩气守卫",
+				szContent = "请诸位侠士协助保护 矿车！",
+			},
+			{
+				szContent = "前线来报，经首道源晶矿收集进展停滞，盟主特派我前来助大家一臂之力！",
+				szTarget = "穆玄英",
+			},
+			{
+				szContent = "那是什么？有巨大的海龟朝着矿车冲过来了，弟兄们注意防守！",
+				szTarget = "恶人守卫",
+			},
+			{
+				tCountdown = {
+					{
+						szName = "恶人矿车",
+						nIcon = 340,
+						nClass = 14,
+						nTime = 300,
+					},
+				},
+				szTarget = "恶人守卫",
+				szContent = "请诸位侠士协助保护 矿车！",
+			},
+			{
+				szContent = "本轮物资收集已结束，先行收兵！",
+				szTarget = "穆玄英",
+			},
+			{
+				szContent = "战况紧急，浩气盟的兄弟速来我身边汇合，准备冲锋陷阵！",
+				szTarget = "穆玄英",
+			},
+		},
+    },
+    CHAT = {
+        [30] = {
+			{
+				tCountdown = {
+					{
+						nIcon = 13,
+						nTime = 60,
+						szName = "霸图死亡",
+						nRefresh = 2671,
+						nClass = 20,
+					},
+				},
+				szContent = "随着霸图的死亡，一柄钢刀从他身上滑落，似乎是他的随身信物。\
+",
+			},
+			{
+				tCountdown = {
+					{
+						nIcon = 13,
+						nTime = 60,
+						szName = "孙永恒死亡",
+						nRefresh = 2672,
+						nClass = 20,
+					},
+				},
+				szContent = "随着孙永恒的死亡，一柄短剑从他身上滑落，似乎是他的随身信物。\
+",
+			},
+		},
+        [22] = {
+			{
+				tCountdown = {
+					{
+						szName = "方超死亡",
+						nIcon = 2672,
+						nClass = 20,
+						nTime = 60,
+					},
+				},
+				szContent = "随着方超的死亡，一把短笛掉了出来，貌似是他的随身信物。\
+",
+			},
+			{
+				tCountdown = {
+					{
+						szName = "赵新宇死亡",
+						nIcon = 2671,
+						nClass = 20,
+						nTime = 60,
+					},
+				},
+				szContent = "赵新宇死亡时，从他身上遗落一把短笛，貌似是他的随身信物。\
+",
+			},
+		},
+    },
 }
